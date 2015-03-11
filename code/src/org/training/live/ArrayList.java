@@ -201,6 +201,12 @@ public class ArrayList
 
 		return oldValue;
 	}
-
-
+	
+	/**
+	 * Removes all Elements in the list.
+	 */
+	public void clear()
+	{
+		list = new String[0];
+	}
 }
