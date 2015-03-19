@@ -106,21 +106,12 @@ public class ArrayListTest
 	}	
 
 
-
-
-
-
-
-
-
 	@Test(expected = NullPointerException.class)
 	public final void addNullList()
 	{
 		final ArrayList list = new ArrayList();
 		list.add((ArrayList)null);
 	}
-
-
 
 	@Test
 	public final void addEmptyList()
@@ -326,7 +317,17 @@ public class ArrayListTest
 		list.add("test");
 		Assert.assertEquals("test", list.get(0));
 	}
+	
+	
+	@Test
+	public void clearAnClearList()
+	{
+		ArrayList list = new ArrayList();
+		
+		list.clear();
+		Assert.assertEquals(0, list.size());
+		
+		list.add("test");
+		Assert.assertEquals("test", list.get(0));
+	}
 }
-
-
-
